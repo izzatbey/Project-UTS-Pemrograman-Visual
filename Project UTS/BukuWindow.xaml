@@ -1,0 +1,24 @@
+﻿<Window x:Class="Project_UTS.BukuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_UTS"
+        mc:Ignorable="d"
+        Title="BukuWindow" Height="450" Width="550">
+    <Grid>
+        <DataGrid x:Name="ListBukuDataGrid" Margin="13,81,249,10"/>
+        <Button x:Name="AddBukuButton" Content="Tambah Buku" HorizontalAlignment="Left" Margin="307,203,0,0" VerticalAlignment="Top" Width="93" Height="24" Click="AddBukuButton_Click"/>
+        <Button x:Name="DeleteBukuButton" Content="Hapus Buku" HorizontalAlignment="Left" Margin="307,244,0,0" VerticalAlignment="Top" Width="93" Height="24" Click="DeleteBukuButton_Click"/>
+        <Button x:Name="UpdateBukuButton" Content="Edit Buku" HorizontalAlignment="Left" Margin="307,289,0,0" VerticalAlignment="Top" Width="93" Height="24" Click="UpdateBukuButton_Click"/>
+        <Button Content="Kembali" HorizontalAlignment="Left" Margin="306,400,0,0" VerticalAlignment="Top" Width="94" Height="24" Click="Button_Click"/>
+        <Label Content="List Buku Perpustakaan" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="208" FontSize="16" FontWeight="Bold"/>
+        <Label Content="BukuID :" HorizontalAlignment="Left" Margin="315,81,0,0" VerticalAlignment="Top"/>
+        <Label Content="Judul Buku :" HorizontalAlignment="Left" Margin="315,112,0,0" VerticalAlignment="Top"/>
+        <Label Content="Author :" HorizontalAlignment="Left" Margin="315,143,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="BukuIDTextbox" HorizontalAlignment="Left" Margin="396,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="BukuIDTextbox_TextChanged"/>
+        <TextBox x:Name="JudulTextbox" HorizontalAlignment="Left" Margin="396,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="JudulTextbox_TextChanged"/>
+        <TextBox x:Name="AuthorTextbox" HorizontalAlignment="Left" Margin="396,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="AuthorTextBox_TextChanged"/>
+
+    </Grid>
+</Window>
